@@ -300,23 +300,28 @@ class SkyController {
 
     final lines =
     _constellationRepository.getLinesForConstellation(id);
-
     if (lines.isEmpty) return null;
-
-    String normalize(String s) =>
-        s.replaceAll(RegExp(r'[^0-9]'), '');
 
     final List<double> azimuths = [];
 
+    final lst = _astronomyEngine.computeLST(
+      time: _skyState.time,
+      longitude: _skyState.location.longitude,
+    );
+
+    final allStars = _starCatalogService.getStars();
+
     for (final line in lines) {
       for (final starId in [line.startStarId, line.endStarId]) {
-        final String normLineId = normalize(starId);
+        for (final star in allStars) {
+          if (star.id == starId) {
+            final altAz =
+            _astronomyEngine.raDecToAltAz(
+              star: star,
+              lst: lst,
+              latitude: _skyState.location.latitude,
+            );
 
-        for (final entry in _skyState.visibleStarAltAz.entries) {
-          final Star star = entry.key;
-          final AltAz altAz = entry.value;
-
-          if (normalize(star.id) == normLineId) {
             azimuths.add(altAz.azimuth);
             break;
           }
@@ -326,7 +331,7 @@ class SkyController {
 
     if (azimuths.isEmpty) return null;
 
-    // Circular mean (correct for angles)
+    // Circular mean (angle-safe)
     final double x =
     azimuths.map(cos).reduce((a, b) => a + b);
     final double y =

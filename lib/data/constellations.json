@@ -1,14 +1,29 @@
 [
   {
     "id": "ursa_major",
-    "name": "Saptarishi (Ursa Major)",
+    "name": "Saptarishi Ursa Major",
     "lines": [
-      ["HIP67301", "HIP62956"],
-      ["HIP62956", "HIP59774"],
-      ["HIP59774", "HIP54061"],
-      ["HIP54061", "HIP53910"],
-      ["HIP53910", "HIP58001"],
-      ["HIP58001", "HIP59774"]
+      ["HIP 67301", "HIP 62956"],
+      ["HIP 62956", "HIP 59774"],
+      ["HIP 59774", "HIP 54061"],
+      ["HIP 54061", "HIP 53910"],
+      ["HIP 53910", "HIP 58001"],
+      ["HIP 58001", "HIP 59774"],
+      ["HIP 54061", "HIP 59774"]
+        ]
+  },
+
+  {
+    "id": "ursa_minor",
+    "name": "Little Dipper Ursa Minor",
+    "lines": [
+      ["HIP11767", "HIP85822"],
+      ["HIP85822", "HIP82080"],
+      ["HIP82080", "HIP77060"],
+
+      ["HIP77060", "HIP72607"],
+      ["HIP72607", "HIP75097"],
+      ["HIP75097", "HIP77060"]
     ]
   },
 
@@ -16,12 +31,110 @@
     "id": "orion",
     "name": "Orion",
     "lines": [
-      ["HIP27989", "HIP26727"],
-      ["HIP26727", "HIP26311"],
-      ["HIP26311", "HIP25930"],
-      ["HIP25930", "HIP25336"],
-      ["HIP27989", "HIP24436"],
-      ["HIP25336", "HIP24436"]
+      ["HIP 27989", "HIP 25336"],
+      ["HIP 25336", "HIP 25930"],
+      ["HIP 25930", "HIP 26311"],
+      ["HIP 26311", "HIP 26727"],
+      ["HIP 26727", "HIP 24436"],
+      ["HIP 24436", "HIP 24378"],
+      ["HIP 24378", "HIP 27989"]
+    ]
+  },
+
+  {
+    "id": "cassiopeia",
+    "name": "Cassiopeia",
+    "lines": [
+      ["HIP 746", "HIP 3179"],
+      ["HIP 3179", "HIP 4427"],
+      ["HIP 4427", "HIP 6686"],
+      ["HIP 6686", "HIP 8886"],
+      ["HIP 8886", "HIP 746"]
+    ]
+  },
+
+  {
+    "id": "cygnus",
+    "name": "Cygnus",
+    "lines": [
+      ["HIP 102098", "HIP 100453"],
+      ["HIP 100453", "HIP 95947"],
+      ["HIP 100453", "HIP 97165"],
+      ["HIP 100453", "HIP 94779"]
+    ]
+  },
+
+  {
+    "id": "scorpius",
+    "name": "Scorpius",
+    "lines": [
+      ["HIP 80763", "HIP 78401"],
+      ["HIP 78401", "HIP 78820"],
+      ["HIP 78820", "HIP 79374"],
+      ["HIP 79374", "HIP 80112"],
+      ["HIP 80112", "HIP 80763"]
+    ]
+  },
+
+  {
+    "id": "leo",
+    "name": "Leo",
+    "lines": [
+      ["HIP 50583", "HIP 54872"],
+      ["HIP 54872", "HIP 57632"],
+      ["HIP 57632", "HIP 54879"],
+      ["HIP 54879", "HIP 49669"],
+      ["HIP 49669", "HIP 50583"]
+    ]
+  },
+
+  {
+    "id": "taurus",
+    "name": "Taurus",
+    "lines": [
+      ["HIP 25428", "HIP 21881"],
+      ["HIP 21881", "HIP 20889"],
+      ["HIP 20889", "HIP 20205"],
+      ["HIP 20205", "HIP 18724"]
+    ]
+  },
+
+  {
+    "id": "gemini",
+    "name": "Gemini",
+    "lines": [
+      ["HIP36850", "HIP37826"],
+      ["HIP37826", "HIP31681"],
+      ["HIP31681", "HIP30883"],
+
+      ["HIP37826", "HIP37740"],
+      ["HIP37740", "HIP35350"]
+    ]
+  },
+
+  {
+    "id": "canis_major",
+    "name": "Canis Major",
+    "lines": [
+      ["HIP32349", "HIP34444"],
+      ["HIP34444", "HIP33579"],
+      ["HIP33579", "HIP30324"],
+
+      ["HIP30324", "HIP31592"],
+      ["HIP31592", "HIP32349"]
+    ]
+  },
+
+  {
+    "id": "lyra",
+    "name": "Lyra",
+    "lines": [
+      ["HIP91262", "HIP91919"],
+      ["HIP91919", "HIP92791"],
+      ["HIP92791", "HIP93194"],
+      ["HIP93194", "HIP91919"],
+
+      ["HIP91919", "HIP91262"]
     ]
   }
 ]
