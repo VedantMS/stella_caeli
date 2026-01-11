@@ -1,16 +1,15 @@
-# sella_caeli
+# Stella Caeli 🌌
 
-Mobile Planetarium & Constellation Visualization App.
+A mobile planetarium and constellation visualization app built with Flutter.
 
-## Getting Started
+## Features
+- Indoor planetarium mode
+- Star and constellation visualization
+- Time and location-based sky simulation
+- Modular architecture
 
-This project is a starting point for a Flutter application.
+## Data
+- Star positions from Hipparcos catalog (filtered)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Status
+🚧 Work in progress (Final Year Project)
