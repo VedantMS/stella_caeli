@@ -1,0 +1,27 @@
+[
+  {
+    "id": "ursa_major",
+    "name": "Saptarishi (Ursa Major)",
+    "lines": [
+      ["HIP67301", "HIP62956"],
+      ["HIP62956", "HIP59774"],
+      ["HIP59774", "HIP54061"],
+      ["HIP54061", "HIP53910"],
+      ["HIP53910", "HIP58001"],
+      ["HIP58001", "HIP59774"]
+    ]
+  },
+
+  {
+    "id": "orion",
+    "name": "Orion",
+    "lines": [
+      ["HIP27989", "HIP26727"],
+      ["HIP26727", "HIP26311"],
+      ["HIP26311", "HIP25930"],
+      ["HIP25930", "HIP25336"],
+      ["HIP27989", "HIP24436"],
+      ["HIP25336", "HIP24436"]
+    ]
+  }
+]
