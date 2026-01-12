@@ -89,21 +89,6 @@ class OrientationService {
     _controller.close();
   }
 
-  /// User-triggered calibration:
-  /// Align camera forward WITHOUT touching North
-  /// Calibrate camera forward direction WITHOUT rotating the sky
-  void calibrate() {
-    // Preserve current camera azimuth visually
-    final double currentCameraAzimuth =
-        (_rawAzimuth - _cameraOffset + 2 * pi) % (2 * pi);
-
-    // Redefine zero so that future motion is relative to this view
-    _cameraOffset = _rawAzimuth - currentCameraAzimuth;
-
-    // Prevent startup auto-alignment from triggering again
-    _startupAligned = true;
-  }
-
   // -------------------------
   // Camera motion (gyro)
   // -------------------------

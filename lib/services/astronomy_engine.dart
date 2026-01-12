@@ -1,7 +1,6 @@
 import 'dart:math';
 
 import '../models/star.dart';
-import '../models/sky_state.dart';
 
 /// AstronomyEngine
 /// ----------------

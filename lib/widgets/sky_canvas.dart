@@ -234,8 +234,12 @@ class _SkyPainter extends CustomPainter {
   // ---------------- Helpers ----------------
 
   double _wrapAngle(double a) {
-    while (a > pi) a -= 2 * pi;
-    while (a < -pi) a += 2 * pi;
+    while (a > pi) {
+      a -= 2 * pi;
+    }
+    while (a < -pi) {
+      a += 2 * pi;
+    }
     return a;
   }
 

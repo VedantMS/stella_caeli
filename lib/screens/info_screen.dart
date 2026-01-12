@@ -31,10 +31,6 @@ class InfoScreen extends StatelessWidget {
             _infoRow('Declination', '${star.dec}°'),
             _infoRow('Magnitude', star.magnitude.toString()),
             const SizedBox(height: 24),
-            const Text(
-              'Educational content can be extended here.',
-              style: TextStyle(fontStyle: FontStyle.italic),
-            ),
           ],
         ),
       ),

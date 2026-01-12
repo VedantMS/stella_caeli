@@ -9,6 +9,7 @@ import '../models/sky_state.dart';
 import '../models/star.dart';
 import '../services/orientation_service.dart';
 import '../widgets/sky_canvas.dart';
+import 'constellation_info_screen.dart';
 
 class SkyViewScreen extends StatefulWidget {
   const SkyViewScreen({super.key});
@@ -130,8 +131,24 @@ class _SkyViewScreenState extends State<SkyViewScreen> {
                   // -----------------------------
                   // Reticle
                   // -----------------------------
-                  const IgnorePointer(
-                    child: Center(child: _CenterReticle()),
+                  Center(
+                    child: GestureDetector(
+                      behavior: HitTestBehavior.translucent,
+                      onTap: () {
+                        final String? targetId = _skyState.targetConstellationId;
+
+                        if (targetId != null) {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) =>
+                                  ConstellationInfoScreen(id: targetId),
+                            ),
+                          );
+                        }
+                      },
+                      child: const _CenterReticle(),
+                    ),
                   ),
 
                   // -----------------------------
@@ -151,22 +168,6 @@ class _SkyViewScreenState extends State<SkyViewScreen> {
                         ),
                       ),
                     ),
-
-                  // -----------------------------
-                  // Calibrate
-                  // -----------------------------
-                  Positioned(
-                    top: 40,
-                    right: 20,
-                    child: FloatingActionButton(
-                      mini: true,
-                      backgroundColor:
-                      Colors.black.withOpacity(0.6),
-                      onPressed: _orientationService.calibrate,
-                      child: const Icon(Icons.explore,
-                          color: Colors.redAccent, size: 20),
-                    ),
-                  ),
 
                   // -----------------------------
                   // Time & Location
@@ -224,8 +225,12 @@ class _SkyViewScreenState extends State<SkyViewScreen> {
   }
 
   double _wrapAngle(double a) {
-    while (a > pi) a -= 2 * pi;
-    while (a < -pi) a += 2 * pi;
+    while (a > pi) {
+      a -= 2 * pi;
+    }
+    while (a < -pi) {
+      a += 2 * pi;
+    }
     return a;
   }
 }
