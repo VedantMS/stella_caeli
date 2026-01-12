@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:sella_caeli/controllers/sky_controller.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../models/sky_state.dart';
@@ -14,6 +15,7 @@ class SettingsController {
   final SkyState _skyState;
   final TimeService _timeService;
   final LocationService _locationService;
+  final SkyController _skyController;
 
   StreamSubscription<DateTime>? _timeSub;
   StreamSubscription<GeoLocation>? _locationSub;
@@ -25,9 +27,11 @@ class SettingsController {
     required SkyState skyState,
     required TimeService timeService,
     required LocationService locationService,
+    required SkyController skyController,
   })  : _skyState = skyState,
         _timeService = timeService,
-        _locationService = locationService;
+        _locationService = locationService,
+        _skyController = skyController;
 
   // -----------------------------
   // PUBLIC GETTERS (NEW)
@@ -74,13 +78,13 @@ class SettingsController {
 
   void setManualTime(DateTime time) {
     _timeSub?.cancel();
-    _skyState.updateTime(time.toUtc());
+    _skyController.updateTime(time.toUtc());
   }
 
   void setManualLocation(GeoLocation location, String country) {
     _locationSub?.cancel();
     _currentCountry = country;
-    _skyState.updateLocation(location);
+    _skyController.updateLocation(location);
   }
 
   void useManualTimeAndLocation({

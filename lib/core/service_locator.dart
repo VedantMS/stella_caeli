@@ -68,6 +68,7 @@ class ServiceLocator {
       skyState: skyState,
       timeService: timeService,
       locationService: locationService,
+      skyController: skyController,
     );
   }
 }
