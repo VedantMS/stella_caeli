@@ -1,6 +1,6 @@
 import 'dart:async';
-import 'package:sella_caeli/controllers/sky_controller.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:stella_caeli/controllers/sky_controller.dart';
 
 import '../models/sky_state.dart';
 import '../services/time_service.dart';

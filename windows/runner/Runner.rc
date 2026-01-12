@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "sella_caeli" "\0"
+            VALUE "FileDescription", "stella_caeli" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "sella_caeli" "\0"
+            VALUE "InternalName", "stella_caeli" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2026 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "sella_caeli.exe" "\0"
-            VALUE "ProductName", "sella_caeli" "\0"
+            VALUE "OriginalFilename", "stella_caeli.exe" "\0"
+            VALUE "ProductName", "stella_caeli" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

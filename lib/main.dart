@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sella_caeli/screens/sky_view_screen.dart';
+import 'package:stella_caeli/screens/sky_view_screen.dart';
 import 'core/service_locator.dart';
 
 Future<void> main () async {

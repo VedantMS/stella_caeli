@@ -1,6 +1,6 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:sella_caeli/screens/time_location_screen.dart';
+import 'package:stella_caeli/screens/time_location_screen.dart';
 
 import '../controllers/settings_controller.dart';
 import '../core/service_locator.dart';
