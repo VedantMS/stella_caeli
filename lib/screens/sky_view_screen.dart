@@ -193,6 +193,32 @@ class _SkyViewScreenState extends State<SkyViewScreen> {
                     ),
                   ),
 
+                      // -----------------------------
+                      // App icon (top-right)
+                      // -----------------------------
+                  Positioned(
+                    top: 36,
+                    right: 16,
+                    child: Container(
+                      width: 36,
+                      height: 36,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Colors.black.withOpacity(0.6),
+                        border: Border.all(
+                          color: Colors.cyanAccent.withOpacity(0.6),
+                          width: 1,
+                        ),
+                      ),
+                      child: ClipOval(
+                        child: Image.asset(
+                          'assets/icon/app_icon.png',
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                  ),
+
                   // -----------------------------
                   // Constellation picker
                   // -----------------------------

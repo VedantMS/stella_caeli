@@ -1,21 +1,21 @@
 [
   {
     "id": "ursa_major",
-    "name": "Saptarishi Ursa Major",
+    "name": "Saptarishi (Ursa Major)",
     "lines": [
-      ["HIP 67301", "HIP 62956"],
+      ["HIP 67301", "HIP 65378"],
+      ["HIP 65378", "HIP 62956"],
       ["HIP 62956", "HIP 59774"],
-      ["HIP 59774", "HIP 54061"],
-      ["HIP 54061", "HIP 53910"],
-      ["HIP 53910", "HIP 58001"],
-      ["HIP 58001", "HIP 59774"],
-      ["HIP 54061", "HIP 59774"]
-        ]
+      ["HIP 59774", "HIP 58001"],
+      ["HIP 58001", "HIP 53910"],
+      ["HIP 53910", "HIP 54061"],
+      ["HIP 59774", "HIP 54061"]
+    ]
   },
 
   {
     "id": "ursa_minor",
-    "name": "Little Dipper Ursa Minor",
+    "name": "Little Dipper (Ursa Minor)",
     "lines": [
       ["HIP11767", "HIP85822"],
       ["HIP85822", "HIP82080"],
