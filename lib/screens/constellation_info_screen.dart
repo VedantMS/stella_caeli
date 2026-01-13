@@ -143,13 +143,16 @@ class _ConstellationInfo {
 final Map<String, _ConstellationInfo> _constellationData = {
   'ursa_major': _ConstellationInfo(
     name: 'Saptarishi (Ursa Major)',
-    symbol: '🐻',
+    symbol: '🌌',
     mythology:
-    'In Indian astronomy, Ursa Major is known as Saptarishi — the seven great sages: '
+    'In Indian astronomy, Ursa Major is known as Saptarishi — the Seven Great Sages: '
         'Atri, Bharadvaja, Gautama, Jamadagni, Kashyapa, Vasishtha, and Vishwamitra. '
-        'They are eternal guides of dharma and cosmic order.\n\n'
-        'In Greek mythology, Ursa Major represents Callisto, a nymph transformed into a bear by Hera. '
-        'Zeus placed her in the sky to protect her.',
+        'They are regarded as eternal custodians of cosmic law (ṛta) and spiritual wisdom.\n\n'
+        'Across different yugas, the Saptarishi are believed to guide humanity, '
+        'preserve sacred knowledge, and re-establish dharma whenever it declines. '
+        'The constellation’s slow apparent motion around the pole symbolises timelessness and continuity.\n\n'
+        'In Greek mythology, Ursa Major represents Callisto, a nymph transformed into a bear by Hera out of jealousy. '
+        'Zeus placed her among the stars to protect her, where she eternally circles the heavens.',
     bestMonths: ['March', 'April', 'May', 'June'],
     famousStars: [
       'Dubhe',
@@ -162,18 +165,23 @@ final Map<String, _ConstellationInfo> _constellationData = {
     ],
   ),
 
+
   'ursa_minor': _ConstellationInfo(
     name: 'Ursa Minor',
     symbol: '🧭',
     mythology:
-    'Ursa Minor contains Polaris, the North Star. It has been used for navigation '
-        'for thousands of years by sailors and travelers.\n\n'
-        'In mythology, it is sometimes associated with Arcas, the son of Callisto.',
+    'Ursa Minor is closely associated with navigation and the concept of cosmic orientation. '
+        'Its brightest star, Polaris, lies nearly aligned with Earth’s rotational axis, making it '
+        'a fixed reference point in the sky.\n\n'
+        'In Greek mythology, Ursa Minor is often identified as Arcas, the son of Callisto, '
+        'placed in the heavens by Zeus to protect him.',
     bestMonths: ['Visible all year (Northern Hemisphere)'],
     famousStars: [
       'Polaris',
       'Kochab',
       'Pherkad',
+      'Yildun',
+      'Eta Ursae Minoris',
     ],
   ),
 
@@ -181,28 +189,41 @@ final Map<String, _ConstellationInfo> _constellationData = {
     name: 'Orion',
     symbol: '🏹',
     mythology:
-    'Orion was a mighty hunter in Greek mythology, placed in the sky by Zeus. '
-        'His belt and sword make him one of the most recognizable constellations.\n\n'
-        'In Indian astronomy, Orion is associated with Mriga (the celestial deer).',
+    'Orion was a giant and mighty hunter in Greek mythology, famed for his strength and pride. '
+        'His boasts of conquering all beasts angered Gaia, who sent a scorpion to kill him.\n\n'
+        'After his death, Zeus placed Orion among the stars, where his figure dominates the winter sky. '
+        'His belt, sword, and shoulders form one of the most recognizable celestial patterns.\n\n'
+        'In Indian astronomy, Orion is associated with Mriga (the celestial deer). '
+        'The belt stars are sometimes interpreted as the arrow of Prajapati, symbolizing desire, sacrifice, '
+        'and cosmic order within Vedic symbolism.',
     bestMonths: ['December', 'January', 'February'],
     famousStars: [
       'Betelgeuse',
       'Rigel',
       'Bellatrix',
       'Saiph',
+      'Mintaka',
+      'Alnilam',
+      'Alnitak',
     ],
   ),
+
 
   'gemini': _ConstellationInfo(
     name: 'Gemini',
     symbol: '♊',
     mythology:
-    'Gemini represents the twins Castor and Pollux. Pollux was immortal, and '
-        'Castor was mortal; Zeus united them in the sky so they could remain together.',
+    'Gemini represents the twins Castor and Pollux, born to the same mother but with different '
+        'fates—Castor mortal and Pollux divine.\n\n'
+        'When Castor died, Pollux begged Zeus to let them share immortality, resulting in the twins '
+        'alternating between Olympus and the underworld, symbolizing eternal brotherhood.',
     bestMonths: ['January', 'February'],
     famousStars: [
       'Castor',
       'Pollux',
+      'Alhena',
+      'Wasat',
+      'Mebsuta',
     ],
   ),
 
@@ -210,14 +231,17 @@ final Map<String, _ConstellationInfo> _constellationData = {
     name: 'Canis Major',
     symbol: '🐕',
     mythology:
-    'Canis Major represents Orion’s hunting dog. It contains Sirius, '
-        'the brightest star in the night sky.\n\n'
-        'Sirius was sacred in ancient Egypt and associated with the flooding of the Nile.',
+    'Canis Major represents the larger hunting dog of Orion, faithfully following the hunter '
+        'across the heavens.\n\n'
+        'Its brightest star, Sirius, was of immense importance in ancient Egypt, where its heliacal '
+        'rising marked the annual flooding of the Nile and symbolized rebirth and renewal.',
     bestMonths: ['December', 'January', 'February'],
     famousStars: [
       'Sirius',
       'Adhara',
       'Wezen',
+      'Aludra',
+      'Mirzam',
     ],
   ),
 
@@ -225,14 +249,102 @@ final Map<String, _ConstellationInfo> _constellationData = {
     name: 'Lyra',
     symbol: '🎶',
     mythology:
-    'Lyra represents the lyre of Orpheus, the legendary musician whose music '
-        'could charm all living things.\n\n'
-        'It is a small but prominent constellation due to Vega.',
+    'Lyra represents the lyre of Orpheus, whose music was said to charm animals, trees, and even stones.\n\n'
+        'After Orpheus’s death, Zeus placed his lyre among the stars, honoring the power of art and music '
+        'to transcend mortality.',
     bestMonths: ['June', 'July', 'August'],
     famousStars: [
       'Vega',
       'Sheliak',
       'Sulafat',
+      'Delta Lyrae',
+      'Epsilon Lyrae (Double Double)',
+    ],
+  ),
+
+  'cassiopeia': _ConstellationInfo(
+    name: 'Cassiopeia',
+    symbol: '👑',
+    mythology:
+    'Cassiopeia was a proud queen who claimed her beauty surpassed that of the sea nymphs. '
+        'Her arrogance angered Poseidon, leading to her punishment.\n\n'
+        'She was placed in the sky, tied to a throne, forever circling the celestial pole—sometimes upside down—'
+        'as a warning against vanity.',
+    bestMonths: ['October', 'November', 'December'],
+    famousStars: [
+      'Schedar',
+      'Caph',
+      'Gamma Cassiopeiae',
+      'Ruchbah',
+      'Segin',
+    ],
+  ),
+
+  'cygnus': _ConstellationInfo(
+    name: 'Cygnus',
+    symbol: '🦢',
+    mythology:
+    'Cygnus is associated with the swan, often linked to Zeus or to the musician Orpheus in different myths.\n\n'
+        'It lies along the Milky Way and forms the famous Northern Cross asterism, making it rich in stars '
+        'and deep-sky objects.',
+    bestMonths: ['June', 'July', 'August', 'September'],
+    famousStars: [
+      'Deneb',
+      'Albireo',
+      'Sadr',
+      'Gienah',
+      'Delta Cygni',
+    ],
+  ),
+
+  'scorpius': _ConstellationInfo(
+    name: 'Scorpius',
+    symbol: '🦂',
+    mythology:
+    'Scorpius represents the scorpion sent by Gaia or Artemis to punish Orion for his arrogance.\n\n'
+        'To prevent further conflict, Zeus placed Scorpius opposite Orion in the sky, ensuring they '
+        'never rise at the same time.',
+    bestMonths: ['May', 'June', 'July'],
+    famousStars: [
+      'Antares',
+      'Shaula',
+      'Sargas',
+      'Dschubba',
+      'Acrab',
+    ],
+  ),
+
+  'leo': _ConstellationInfo(
+    name: 'Leo',
+    symbol: '🦁',
+    mythology:
+    'Leo represents the Nemean Lion, a fearsome beast slain by Hercules as part of his first labor.\n\n'
+        'The lion’s impenetrable hide symbolized invincibility, and its placement in the sky commemorates '
+        'strength, courage, and triumph over adversity.',
+    bestMonths: ['March', 'April', 'May'],
+    famousStars: [
+      'Regulus',
+      'Denebola',
+      'Algieba',
+      'Zosma',
+      'Chertan',
+    ],
+  ),
+
+  'taurus': _ConstellationInfo(
+    name: 'Taurus',
+    symbol: '🐂',
+    mythology:
+    'Taurus represents the bull that Zeus transformed into to abduct Europa.\n\n'
+        'The constellation is one of the oldest known, deeply significant in ancient agricultural societies '
+        'and home to the Pleiades and Hyades star clusters.',
+    bestMonths: ['November', 'December', 'January'],
+    famousStars: [
+      'Aldebaran',
+      'Elnath',
+      'Hyades',
+      'Pleiades',
+      'Prima Hyadum',
     ],
   ),
 };

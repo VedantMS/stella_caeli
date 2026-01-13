@@ -193,9 +193,9 @@ class _SkyViewScreenState extends State<SkyViewScreen> {
                     ),
                   ),
 
-                      // -----------------------------
-                      // App icon (top-right)
-                      // -----------------------------
+                  // -----------------------------
+                  // App icon (top-right)
+                  // -----------------------------
                   Positioned(
                     top: 36,
                     right: 16,
@@ -212,7 +212,7 @@ class _SkyViewScreenState extends State<SkyViewScreen> {
                       ),
                       child: ClipOval(
                         child: Image.asset(
-                          'assets/icon/app_icon.png',
+                          'assets/icon/icon.png',
                           fit: BoxFit.cover,
                         ),
                       ),
